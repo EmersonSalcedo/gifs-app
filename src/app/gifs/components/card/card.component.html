@@ -1,0 +1,8 @@
+<div
+  class="w-full max-w-sm border-2 border-gray-700 rounded-lg bg-gray-800">
+<!--  <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">-->
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'No name'" ></shared-lazy-image>
+  <div class="px-5 pb-5">
+    <h5 class="text-xl text-center font-semibold tracking-tight text-white">{{ gif.title || 'No title' }}</h5>
+  </div>
+</div>
